@@ -1,21 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# Function 2: Average Price in each SA4 Sydney Region
-# Grouped Bar Chart
-
-# In[2]:
-
-
 import pandas as pd
 import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode, iplot
 init_notebook_mode()
 import matplotlib.pyplot as plt
-
-
-# In[25]:
-
 
 def FuelPriceSA4(fueltype, measure):
     """
@@ -306,9 +293,7 @@ def FuelPriceSA4(fueltype, measure):
     
 FuelPriceSA4('E10','Mean')
 
-
-# In[23]:
-
+#####
 
 def IncomeSA4(measure):
     """
@@ -358,10 +343,3 @@ def IncomeSA4(measure):
     iplot(fig)
     
 IncomeSA4('Mean')
-
-
-# In[ ]:
-
-
-
-
