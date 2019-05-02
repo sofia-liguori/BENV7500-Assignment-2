@@ -1,19 +1,8 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# Function 3: Comparison of Mean Fuel Price to Mean Income for SA4 Regions
-
-# In[1]:
-
-
 import pandas as pd
 import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode, iplot
 init_notebook_mode()
 import matplotlib.pyplot as plt
-
-
-# In[9]:
 
 
 #Import data & establish variables for use in function 
@@ -146,9 +135,6 @@ fuelmedian = [baulkham_2016_median,blacktown_2016_median,city_2016_median, easte
             ]
 
 
-# In[19]:
-
-
 def IncomeFuelSA4(FuelMeasure, IncomeMeasure):
     #define variables
     x = name
@@ -204,10 +190,3 @@ def IncomeFuelSA4(FuelMeasure, IncomeMeasure):
     plt.show()
     
 IncomeFuelSA4('Mean', 'Mean')
-
-
-# In[ ]:
-
-
-
-
